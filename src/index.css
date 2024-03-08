@@ -7,3 +7,18 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+button {
+  user-select: none;
+}
+h1,
+h3 {
+  user-select: none;
+  background: #fd00b1; /* Fallback background color */
+  background: linear-gradient(
+    to right,
+    rgb(133, 40, 190) 0%,
+    #fd00b1 100%
+  ); /* Linear gradient background */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Set text color to transparent */
+}
